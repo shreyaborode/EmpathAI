@@ -22,7 +22,7 @@ class _DailyTestScreenState extends State<DailyTestScreen> {
     {'name': 'Lion', 'image': 'assets/lion.jpeg'},
     {'name': 'Elephant', 'image': 'assets/elephant.jpg'},
     {'name': 'Zebra', 'image': 'assets/zebra.jpeg'},
-    {'name': 'Giraffe', 'image': 'assets/giraffe.jpg'},
+    {'name': 'Giraffe', 'image': 'assets/jiraffe.jpg'},
   ];
 
   final List<Map<String, String>> birds = [
@@ -147,12 +147,9 @@ class _DailyTestScreenState extends State<DailyTestScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Daily Memory Test', style: TextStyle(fontSize: 22)),
-        backgroundColor: Colors.deepPurple,
-        centerTitle: true,
-        elevation: 5,
-      ),
+
+
+
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gajni_ai/Patient/task_list.dart';
+import 'package:gajni_ai/Patient/verbaltest.dart';
 import 'dailytest.dart';
-import 'weekly_result_screen.dart';
-import 'profile_screen.dart';
+import 'memorytiles.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -15,8 +15,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = [
     HomeScreenBody(),
     DailyTestScreen(),
-    WeeklyResultScreen(),
-    ProfileScreen(),
+    MemoryTiles(),
+    QuizScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -39,8 +39,8 @@ class _HomeScreenState extends State<HomeScreen> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: 'Daily Tests'),
-          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: 'Weekly Results'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: 'Memory Games'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Quiz'),
         ],
       ),
     );
